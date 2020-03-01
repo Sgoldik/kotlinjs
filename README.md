@@ -1,2 +1,2 @@
 # kotlinjs
-KotlinJs
+KotlinJs test
