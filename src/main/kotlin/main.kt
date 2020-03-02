@@ -50,7 +50,7 @@ fun main() {
                 + "Student list color:"
                 arrayListOf("white", "yellow", "brown").map {
                     label {
-                        input(InputType.radio, name = "color") {
+                        input(InputType.radio, name = "studentsColor") {
                             attributes += "value" to it
                             onClickFunction = changeElementColor(it, "listStudents")
                         }
