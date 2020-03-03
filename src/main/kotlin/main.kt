@@ -1,14 +1,11 @@
 import data.Student
 import data.studentList
-import kotlinx.html.H1
-import kotlinx.html.InputType
+import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.*
-import org.w3c.dom.HTMLDivElement
-import org.w3c.dom.HTMLInputElement
-import org.w3c.dom.HTMLSelectElement
+import kotlinx.html.js.li
+import org.w3c.dom.*
 import org.w3c.dom.events.Event
-import org.w3c.dom.get
 import kotlin.browser.document
 import kotlin.dom.clear
 
@@ -33,32 +30,36 @@ fun main() {
                 }
             }
             div {
-                attributes += "id" to "selectColor"
+                attributes += "id" to "selecTitletColor"
                 + "Title color:"
-                arrayListOf("blue", "yellow", "brown").map {
-                    label {
-                        input(InputType.radio, name = "color") {
-                            attributes += "value" to it
-                            onClickFunction = changeElementColor(it, "title")
-                        }
-                        +it
-                    }
-                }
+                labelInput (options = arrayListOf("white", "yellow", "brown"), colorChangeItemId = "title")
             }
             div {
-                attributes += "id" to "selectColorActive"
-                + "Student list color:"
-                arrayListOf("white", "yellow", "brown").map {
-                    label {
-                        input(InputType.radio, name = "studentsColor") {
-                            attributes += "value" to it
-                            onClickFunction = changeElementColor(it, "listStudents")
-                        }
-                        +it
-                    }
-                }
+                attributes += "id" to "selectActiveColor"
+                + "List students color:"
+                labelInput (options = arrayListOf("white", "yellow", "brown"), colorChangeItemId = "listStudents")
             }
         }
+}
+
+fun TagConsumer<HTMLElement>.labelInput(
+    classes : String? = null,
+    colorChangeItemId: String,
+    options: List<String>,
+    block : DIV.() -> Unit = {}
+) : HTMLDivElement = div (
+    classes
+) {
+    options.forEach{
+        label {
+            input(InputType.radio, name = colorChangeItemId) {
+                attributes += "value" to it
+                onClickFunction = changeElementColor(it, colorChangeItemId)
+            }
+            +it
+        }
+   }
+    block()
 }
 
 private fun changeElementColor(it: String, id: String): (Event) -> Unit {
