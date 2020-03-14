@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bd0963c-8f28-4e6a-9542-a2caa1f740f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/RStudent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/RStudentList.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/kotlinjs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/kotlinjs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/kotlinjs.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/kotlinjs.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/kotlinjs.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/kotlinjs.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/main.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +60,7 @@
   <component name="ProjectId" id="1Xku7z8hGnQyUQe55oP71bzRkEm" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kotlinjs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />

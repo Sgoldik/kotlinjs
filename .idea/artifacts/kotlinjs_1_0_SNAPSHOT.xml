@@ -1,8 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="kotlinjs-1.0-SNAPSHOT">
-    <output-path>C:\kotlin\kotlinjs\build\libs</output-path>
-    <root id="archive" name="kotlinjs-1.0-SNAPSHOT.jar">
-      <element id="module-output" name="kotlinjs.kotlinjs.main" />
-    </root>
+    <output-path>C:\kotlin\react\kotlinjs\build\libs</output-path>
+    <root id="archive" name="kotlinjs-1.0-SNAPSHOT.jar" />
   </artifact>
 </component>
