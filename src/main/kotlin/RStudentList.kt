@@ -1,35 +1,30 @@
 import data.Student
+import org.w3c.dom.events.Event
 import react.*
+import react.dom.h2
 import react.dom.li
 import react.dom.ol
 
 interface RStudentListProps: RProps {
     var students: Array<Student>
+    var presents: Array<Boolean>
+    var onClick: (Int) -> (Event) -> Unit
 }
 
-class RStudentList: RComponent<RStudentListProps, RState>() {
-    override fun RBuilder.render() {
+val RFStudentList =
+    functionalComponent<RStudentListProps> {
         ol {
-            props.students.map {
+            it.students.mapIndexed {index, student ->
                 li {
-                    rstudent(it)
+                    rstudent(student, it.presents[index], it.onClick(index))
                 }
             }
         }
     }
-}
 
-fun RBuilder.rstudentlist(students: Array<Student>) =
-    child(
-        functionalComponent<RStudentListProps> {
-            ol {
-                students.map {
-                    li {
-                        rstudent(it)
-                    }
-                }
-            }
-        }
-    ) {
-        attrs.students = students
-    }
+fun RBuilder.studentList(students: Array<Student>, presents: Array<Boolean>, onClick: (Int) -> (Event) -> Unit) = child(RFStudentList) {
+    attrs.students = students
+    attrs.presents = presents
+    attrs.onClick = onClick
+
+}

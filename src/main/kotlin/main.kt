@@ -1,6 +1,5 @@
-import data.Student
-import data.studentList
-import react.dom.*
+import data.*
+import react.dom.h1
 import react.dom.render
 import kotlin.browser.document
 
@@ -9,7 +8,7 @@ fun main() {
         h1 {
             +"Students"
         }
-        rstudentlist(studentList.toTypedArray())
+        lessons(studentList.toTypedArray())
     }
 
 }

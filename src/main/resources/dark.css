@@ -1,8 +1,12 @@
 body {
     background-color: #222222;
-    color: white
+    color: white;
 }
 
 .absent {
-    color: grey
+    color: grey;
+}
+
+.present {
+    color: white;
 }
