@@ -22,10 +22,6 @@ val fAddLesson =
             input(type = InputType.text) {
                 attrs {
                     id = "addLesson-input"
-                    onChangeFunction = {event ->
-                        val target = event.target as HTMLInputElement
-                        this.value = target.value
-                    }
                 }
 
             }
