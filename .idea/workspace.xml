@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bd0963c-8f28-4e6a-9542-a2caa1f740f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/AddLesson.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/app.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/lesson.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/lessonFull.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/lessonListFull.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/student.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/studentFull.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/studentListFull.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data/lesson.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/RLesson.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/RStudent.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/RStudentList.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/student.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/student.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/AddLesson.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/addLesson.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/app.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/app.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +60,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">

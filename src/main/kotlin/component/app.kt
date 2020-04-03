@@ -24,7 +24,7 @@ class App : RComponent<AppProps, AppState>() {
 
     override fun RBuilder.render() {
         h1 { +"App" }
-        AddLesson(
+        addLesson(
             onClickAddLesson()
         )
         lessonListFull(
@@ -56,14 +56,12 @@ class App : RComponent<AppProps, AppState>() {
             }
         }
 
-    fun onClickAddLesson () = { lesson: String ->
-        { _: Event ->
-            setState {
-                lessons += Lesson(lesson)
-                presents += arrayOf(
-                    Array(props.students.size) { false })
-
-            }
+    fun onClickAddLesson() = { lesson: String ->
+        setState {
+            lessons += Lesson(lesson)
+            presents += arrayOf(
+                Array(props.students.size) { false }
+            )
         }
     }
 
