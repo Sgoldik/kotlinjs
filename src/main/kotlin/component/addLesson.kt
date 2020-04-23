@@ -1,4 +1,5 @@
 package component
+import hoc.withDisplayName
 import react.*
 import react.dom.*
 import org.w3c.dom.events.Event
@@ -10,7 +11,7 @@ import org.w3c.dom.HTMLInputElement
 import kotlin.browser.document
 
 interface AddLessonProps : RProps {
-    var onClickAddLesson: (String) -> Unit
+    var onClickAddLesson: (Array<String>) -> Unit
 }
 
 val fAddLesson =
@@ -29,7 +30,8 @@ val fAddLesson =
                 +"Add"
                 attrs.onClickFunction = {_ ->
                     val element = document.getElementById("addLesson-input") as HTMLInputElement
-                    it.onClickAddLesson(element.value)
+                    val lesson = arrayOf(element.value)
+                    it.onClickAddLesson(lesson)
                 }
 
             }
@@ -37,7 +39,9 @@ val fAddLesson =
     }
 
 fun RBuilder.addLesson(
-    onClickAddLesson: (String) -> Unit
-) = child(fAddLesson) {
+    onClickAddLesson: (Array<String>) -> Unit
+) = child(
+    withDisplayName("Add Lesson", fAddLesson)
+) {
     attrs.onClickAddLesson = onClickAddLesson
 }

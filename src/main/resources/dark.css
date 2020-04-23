@@ -10,3 +10,21 @@ body {
 .present {
     color: white;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation-item {
+    padding-right: 50px;
+    list-style-type: none;
+}
+
+.remove-buttons {
+    display: inline-grid;
+}
