@@ -1,5 +1,6 @@
 package component
 import data.Lesson
+import data.State
 import hoc.withDisplayName
 import react.*
 import react.dom.*
@@ -10,18 +11,19 @@ import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLInputElement
 import react.router.dom.navLink
 import react.router.dom.route
+import redux.*
 import kotlin.browser.document
 
 interface EditLessonProps : RProps {
     var lesson: Lesson
     var index: Int
-    var onClickRenameLesson: (Int, String) -> Unit
+    var store: Store<State, RAction, WrapperAction>
 }
 
 val fEditLesson =
-    functionalComponent<EditLessonProps> {
+    functionalComponent<EditLessonProps> { props ->
         h2 {
-            + "Edit lesson :: ${it.lesson.name}"
+            + "Edit lesson :: ${props.lesson.name}"
         }
         div {
             span{
@@ -37,20 +39,24 @@ val fEditLesson =
                 +"Save"
                 attrs.onClickFunction = {_ ->
                     val element = document.getElementById("renameLesson-input") as HTMLInputElement
-                    it.onClickRenameLesson(it.index, element.value)
+                    props.onClickRenameLesson(props.index, element.value)
                 }
             }
         }
     }
 
+fun EditLessonProps.onClickRenameLesson (index: Int, name: String) {
+    store.dispatch(EditLesson(index, name))
+}
+
 fun RBuilder.editLesson(
     lesson: Lesson,
     index: Int,
-    onClickRenameLesson: (Int, String) -> Unit
+    store: Store<State, RAction, WrapperAction>
 ) = child(
     withDisplayName("Edit Lesson", fEditLesson)
 ) {
     attrs.lesson = lesson
     attrs.index = index
-    attrs.onClickRenameLesson = onClickRenameLesson
+    attrs.store = store
 }

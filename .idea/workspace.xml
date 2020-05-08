@@ -2,31 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bd0963c-8f28-4e6a-9542-a2caa1f740f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/addStudent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/anyEditList.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/anyFull.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/anyList.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/editLesson.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/editStudent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hoc/withDisplayName.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/k2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data/State.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/redux/actions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/redux/reducers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wrapper/reduxLogger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/org.example.kotlinjs.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/org.example.kotlinjs.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/addLesson.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/addLesson.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/anyEditList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/anyEditList.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/app.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/app.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/lessonFull.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/lessonList.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/lessonListFull.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/student.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/student.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/studentFull.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/studentList.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/studentListFull.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/lesson.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/lesson.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/student.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/student.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/editLesson.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/editLesson.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/editStudent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/editStudent.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dark.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +140,12 @@
       <updated>1581602249179</updated>
       <workItem from="1587613829513" duration="190000" />
       <workItem from="1587614157540" duration="15128000" />
-      <workItem from="1587631153789" duration="20836000" />
+      <workItem from="1587631153789" duration="20861000" />
+      <workItem from="1588836989185" duration="2484000" />
+      <workItem from="1588840098780" duration="42000" />
+      <workItem from="1588851842560" duration="6727000" />
+      <workItem from="1588908170772" duration="8546000" />
+      <workItem from="1588917501354" duration="5464000" />
     </task>
     <task id="LOCAL-00001" summary="added RStudent and RStudentList components">
       <created>1584190687982</created>
@@ -193,22 +185,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="added RLesson and update RStudentList components" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1860" height="317" key="GridCell.Tab.0.bottom" timestamp="1587651982084">
+    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1588912008953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="317" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587651982084" />
-    <state width="1860" height="317" key="GridCell.Tab.0.center" timestamp="1587651982084">
+    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588912008953" />
+    <state x="1120" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588837328609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="317" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587651982084" />
-    <state width="1860" height="317" key="GridCell.Tab.0.left" timestamp="1587651982084">
+    <state x="1120" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588837328609" />
+    <state width="1877" height="319" key="GridCell.Tab.0.bottom" timestamp="1588922683996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="317" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587651982084" />
-    <state width="1860" height="317" key="GridCell.Tab.0.right" timestamp="1587651982084">
+    <state width="1877" height="319" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588922683996" />
+    <state width="1877" height="319" key="GridCell.Tab.0.center" timestamp="1588922683996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="317" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587651982084" />
+    <state width="1877" height="319" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588922683996" />
+    <state width="1877" height="319" key="GridCell.Tab.0.left" timestamp="1588922683995">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="319" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588922683995" />
+    <state width="1877" height="319" key="GridCell.Tab.0.right" timestamp="1588922683996">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="319" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588922683996" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1588919274990">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1588919274990" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587629792883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

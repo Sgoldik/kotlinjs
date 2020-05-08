@@ -1,10 +1,12 @@
 package component
 
+import data.Lesson
 import hoc.withDisplayName
 import kotlinx.html.js.onClickFunction
 import react.*
 import react.dom.*
 import react.functionalComponent
+import redux.WrapperAction
 
 interface AnyEditListProps<O> : RProps {
     var objs: Array<O>
