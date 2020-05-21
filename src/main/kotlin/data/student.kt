@@ -1,14 +1,14 @@
 package data
 
 data class Student (
-    var firstname: String,
-    var surname: String
+    val firstname: String,
+    val surname: String
 ) {
     override fun toString(): String =
         "$firstname $surname"
 }
 
-val studentList =
+fun studentList() =
     arrayOf(
         Student("Sheldon", "Cooper"),
         Student("Leonard", "Hofstadter"),

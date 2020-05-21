@@ -28,3 +28,8 @@ a {
 .remove-buttons {
     display: inline-grid;
 }
+
+.fakeLink {
+    text-decoration: underline;
+    cursor: pointer;
+}

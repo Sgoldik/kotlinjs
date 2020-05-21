@@ -2,19 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bd0963c-8f28-4e6a-9542-a2caa1f740f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data/State.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/redux/actions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/redux/reducers.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wrapper/reduxLogger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/org.example.kotlinjs.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/org.example.kotlinjs.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/component/Link.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/container/anyFullContainer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/container/anyListContainers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/container/appContainer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/container/editContainer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/container/filterLink.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data/VisibilityFilter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/anyEditList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/anyEditList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/addLesson.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/addStudent.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/anyEditList.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/anyFull.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/anyFull.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/anyList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/anyList.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/app.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/app.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/editLesson.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/editLesson.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/editStudent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/editStudent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/editLesson.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/editStudent.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/lesson.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/lesson.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/component/student.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/component/student.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/State.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/State.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/lesson.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/lesson.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/student.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/student.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/redux/actions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/redux/actions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/redux/reducers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/redux/reducers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/wrapper/reduxLogger.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dark.css" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,15 +93,35 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/component" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="data" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\kotlin\react\kotlinjs\src\main\kotlin\component" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Gradle.kotlinjs [run]">
-    <configuration name="kotlinjs [kotlinNpmResolve]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="kotlinjs [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -94,7 +132,64 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="kotlinNpmResolve" />
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="kotlinjs [buildNeeded]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildNeeded" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="kotlinjs [kotlinNpmInstall]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="kotlinNpmInstall" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="kotlinjs [packageJson]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="packageJson" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -124,7 +219,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.kotlinjs [run]" />
-        <item itemvalue="Gradle.kotlinjs [kotlinNpmResolve]" />
+        <item itemvalue="Gradle.kotlinjs [buildDependents]" />
+        <item itemvalue="Gradle.kotlinjs [buildNeeded]" />
+        <item itemvalue="Gradle.kotlinjs [packageJson]" />
+        <item itemvalue="Gradle.kotlinjs [kotlinNpmInstall]" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +243,11 @@
       <workItem from="1588840098780" duration="42000" />
       <workItem from="1588851842560" duration="6727000" />
       <workItem from="1588908170772" duration="8546000" />
-      <workItem from="1588917501354" duration="5464000" />
+      <workItem from="1588917501354" duration="7023000" />
+      <workItem from="1589691629293" duration="215000" />
+      <workItem from="1589788690045" duration="26000" />
+      <workItem from="1589951673414" duration="294000" />
+      <workItem from="1590029447489" duration="1801000" />
     </task>
     <task id="LOCAL-00001" summary="added RStudent and RStudentList components">
       <created>1584190687982</created>
@@ -172,12 +274,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added RStudent and RStudentList components" />
@@ -193,26 +296,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1120" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588837328609" />
-    <state width="1877" height="319" key="GridCell.Tab.0.bottom" timestamp="1588922683996">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1589788716537">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="319" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588922683996" />
-    <state width="1877" height="319" key="GridCell.Tab.0.center" timestamp="1588922683996">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589788716537" />
+    <state width="1877" height="329" key="GridCell.Tab.0.bottom" timestamp="1590031039542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="319" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588922683996" />
-    <state width="1877" height="319" key="GridCell.Tab.0.left" timestamp="1588922683995">
+    <state width="1877" height="329" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590031039542" />
+    <state width="1877" height="329" key="GridCell.Tab.0.center" timestamp="1590031039542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="319" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588922683995" />
-    <state width="1877" height="319" key="GridCell.Tab.0.right" timestamp="1588922683996">
+    <state width="1877" height="329" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590031039542" />
+    <state width="1877" height="329" key="GridCell.Tab.0.left" timestamp="1590031039542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="319" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588922683996" />
+    <state width="1877" height="329" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590031039542" />
+    <state width="1877" height="329" key="GridCell.Tab.0.right" timestamp="1590031039542">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="329" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590031039542" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1590030895632">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590030895632" />
     <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1588919274990">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1588919274990" />
+    <state x="342" y="203" key="new project wizard" timestamp="1589691856832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="203" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1589691856832" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587629792883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

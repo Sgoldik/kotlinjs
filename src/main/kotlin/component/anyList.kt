@@ -1,35 +1,52 @@
 package component
 
-import hoc.withDisplayName
+import container.filterLink
+import data.VisibilityFilter
+import kotlinx.html.js.onClickFunction
+import org.w3c.dom.events.Event
 import react.*
 import react.dom.*
-import react.functionalComponent
 import react.router.dom.navLink
 
 interface AnyListProps<O> : RProps {
-    var objs: Array<O>
+    var objs: Map<Int, O>
+    var add: (Event) -> Unit
+    var remove: (Int) -> Unit
 }
 
-fun <T> fAnyList(name: String, path: String) =
-    functionalComponent<AnyListProps<T>> {
+fun <O> fAnyList(
+    name: String,
+    path: String,
+    rObj: RBuilder.(O, String, (Event) -> Unit) -> ReactElement
+) =
+    functionalComponent<AnyListProps<O>> { props ->
         h2 { +name }
-        ul {
-            it.objs.mapIndexed{ index, obj ->
-                li {
-                    navLink("$path/$index"){
-                        +obj.toString()
+        span("fakeLink") {
+            +"Add"
+            attrs.onClickFunction = props.add
+        }
+        table {
+            props.objs.map { obj ->
+                tr {
+                    td {
+                        navLink("$path/${obj.key}") {
+                            rObj(obj.value, "normal", {})
+                        }
+                    }
+                    td {
+                        navLink("$path/${obj.key}/edit") {
+                            +" Edit "
+                        }
+                    }
+                    td {
+                        span("fakeLink") {
+                            +" Delete"
+                            attrs.onClickFunction = {
+                                props.remove(obj.key)
+                            }
+                        }
                     }
                 }
             }
         }
     }
-
-fun <T> RBuilder.anyList(
-    anys: Array<T>,
-    name: String,
-    path: String
-) = child(
-    withDisplayName(name, fAnyList<T>(name, path))
-){
-    attrs.objs = anys
-}

@@ -1,34 +1,26 @@
-import component.app
+import container.*
 import data.*
 import react.dom.render
-import react.router.dom.browserRouter
+import react.redux.provider
 import react.router.dom.hashRouter
 import redux.*
 import kotlin.browser.document
-import wrapper.reduxLogger
 
-val store = createStore(
-    ::changeReducer,
-    State(lessonsList, studentList, Array(lessonsList.size) { Array(studentList.size) { false } }),
+val store: Store<State, RAction, WrapperAction> = createStore(
+    ::rootReducer,
+    initialState(),
     compose(
         rEnhancer(),
-        applyMiddleware(
-            reduxLogger.logger as Middleware<State, Action, Action, Action, Action>
-        )
+        js("if(window.__REDUX_DEVTOOLS_EXTENSION__ )window.__REDUX_DEVTOOLS_EXTENSION__ ();else(function(f){return f;});")
     )
 )
 
-val rootDiv = document.getElementById("root")
-
-fun render () = render(rootDiv) {
-    hashRouter {
-        app(lessonsList, studentList, store)
-    }
-}
-
 fun main() {
-    render()
-    store.subscribe {
-        render()
+    render(document.getElementById("root")) {
+        provider(store) {
+            hashRouter {
+                appContainer {}
+            }
+        }
     }
 }
